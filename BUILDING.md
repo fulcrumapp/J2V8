@@ -1,3 +1,41 @@
+# Setup for J2V8 Native Library Building
+
+## Install Android NDK
+
+**Install NDK via SDK Manager**
+- Open Android Studio
+- Go to Tools > SDK Manager
+- Click "SDK Tools" tab
+- Check NDK and click apply
+
+**Set environment variable**
+```bash
+# Add to ~/.zshrc or ~/.bash_profile and replace ###### with your NDK version
+export ANDROID_NDK_HOME=~/Library/Android/sdk/ndk/######
+
+# Reload shell
+source ~/.zshrc
+```
+
+## Run the build script
+
+```bash
+./rebuild_native.sh
+```
+This will compile new .so libraries from V8 sources and place them in `src/main/jniLibs/` replacing the existing ones.
+It will also run `./gradlew assembleRelease` and build the .aar artifact.
+
+## Publish to Github Maven repository
+
+Make sure the previous step was successful and the .aar artifact was created in `build/outputs/aar/j2v8-release.aar`.
+```bash
+./gradlew publish
+```
+
+
+<details>
+	<summary><strong>Original J2V8 Building</strong></summary>
+
 # Getting started / building from source
 
 #### Requirements
@@ -253,3 +291,5 @@ To invoke a cross-compile build, simply invoke the `build.py` script as usual bu
 This will automatically provision and run the necessary virtualization to run the requested build fully independent of your local environment.
 
 <b>Note:</b> using Docker / Vagrant for cross-compilation requires many gigabytes of hard-drive space as well as downloading the required images & tools.
+
+</details>

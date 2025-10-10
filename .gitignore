@@ -20,6 +20,7 @@ hs_err*.log
 *.ipr
 *.iws
 .idea
+local.properties
 
 # Python binaries
 *.pyc
@@ -30,6 +31,7 @@ build.out
 cmake.out
 node.out
 v8.out
+build_native
 
 # test input/output
 test-mockup-os-release

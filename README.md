@@ -1,3 +1,15 @@
+Fork Readme
+====
+
+This is a fork of [J2V8 project](https://github.com/eclipsesource/J2V8) with support of [16kb page aligment for Android](https://developer.android.com/guide/practices/page-sizes).
+
+## How to build locally?
+
+For information about how to build this fork locally, please read [BUILDING.md](BUILDING.md)
+
+<details>
+	<summary><strong>Original J2V8 Readme</strong></summary>
+
 J2V8
 ====
 
@@ -57,3 +69,5 @@ Here are some projects that use J2V8:
 License
 =====
 The code is published under the terms of the [Eclipse Public License, version 1.0](http://www.eclipse.org/legal/epl-v10.html).
+
+</details>
