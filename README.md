@@ -1,7 +1,7 @@
 Fork Readme
 ====
 
-This is a fork of [J2V8 project](https://github.com/eclipsesource/J2V8) with support of [16kb page aligment for Android](https://developer.android.com/guide/practices/page-sizes).
+This is a fork of [J2V8 project](https://github.com/eclipsesource/J2V8) with support of [16kb page alignment for Android](https://developer.android.com/guide/practices/page-sizes).
 
 ## How to build locally?
 
