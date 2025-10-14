@@ -32,11 +32,11 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13.1'
     //testImplementation 'org.mockito:mockito-all:2.6.3'
     testImplementation 'org.mockito:mockito-core:2.6.3'
 
-    androidTestImplementation 'junit:junit:4.12'
+    androidTestImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'org.mockito:mockito-android:2.6.3' // https://jeroenmols.com/blog/2017/01/17/mockitoandroid/
     androidTestImplementation 'com.android.support:support-annotations:24.0.0'
     androidTestImplementation 'com.android.support.test:runner:0.5'
